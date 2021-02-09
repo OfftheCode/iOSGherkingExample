@@ -1,0 +1,1024 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01C389456EEE46D60D6669F0E21FE8F9 /* PageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB35909EE39FE3AACB4721EBE4257A4 /* PageObject.swift */; };
+		038A51D78C26F851E084B0D7C8FEDF10 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5CFF4B7FCAF6D76CD651E4AD496E6C /* Step.swift */; };
+		04119F0C7B9541A2481F5A456E7E0F69 /* MatchedStringRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6B8928F1E4FA1F4CD66913B39C18C8 /* MatchedStringRepresentable.swift */; };
+		0982A2D354FFF53A63C5AC719EA143D3 /* XCTestCase+Gherkin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B89C6ED8C15F9E47A1869921C99C2E1 /* XCTestCase+Gherkin.swift */; };
+		1F9FD15D3D78243A5D5D4E18935C5531 /* LevenshteinDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B7F2D455C57E48C9886E088927EF18 /* LevenshteinDistance.swift */; };
+		28FE6140B7BE2AB2CB51DF415C155045 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = B860ACACF448298A6023FB22D5F8CE8C /* Example.swift */; };
+		2CC1AB60659639248FA7BE95D2FEAA94 /* StepDefiner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C356AC1704AB88A4D865595B9844A2C /* StepDefiner.swift */; };
+		3915F5DF36B9CD83825AD43B02718487 /* ClassHelperMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B0BC3E8A5396C93DF21DC1DEF09D29 /* ClassHelperMethods.swift */; };
+		62C1F8A60A176E156BFE99F7A6D810D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033A36A29482FD32230FE0CA177F9BD3 /* Foundation.framework */; };
+		637733F2FE096C5EDE1ECF0568B3CCC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033A36A29482FD32230FE0CA177F9BD3 /* Foundation.framework */; };
+		8D86E8C067D854ED5C4B2AA784972AF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033A36A29482FD32230FE0CA177F9BD3 /* Foundation.framework */; };
+		A53FB80CD07AE5F97FBF46A61B2A0F0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033A36A29482FD32230FE0CA177F9BD3 /* Foundation.framework */; };
+		AADF341B3FA5A8C1B7F90B9E126384A3 /* Pods-GherkinTests-GherkinTestsUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 040C3DE4156F814B70C6C1D88B69D28E /* Pods-GherkinTests-GherkinTestsUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADC07F7DB0DD4AD88776FB7D92A93A89 /* UnusedStepsTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 834A46400DFE01999A2B7DA22CC3FD0D /* UnusedStepsTracker.m */; };
+		B666A95FAB2C7A68223353D02C770449 /* Pods-GherkinTestsTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E1EE84167F6BB60EFB01D68E1F25FF9 /* Pods-GherkinTestsTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7C38545DBEEE063ADFF6C915EA4FF2B /* Pods-GherkinTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECBEDB9509F19DD946ADE9F9DD944918 /* Pods-GherkinTests-dummy.m */; };
+		C85A5998A72CCB1939071FDD6EBFBC13 /* XCTest-Gherkin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 80E3E1A680356228B7EB64C559E21162 /* XCTest-Gherkin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0FF39CBFDC8D4E226AED8F5F201F2E9 /* Pods-GherkinTests-GherkinTestsUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ED93723EC78B72E762E0FEF9DE18FA /* Pods-GherkinTests-GherkinTestsUITests-dummy.m */; };
+		D3CEDDDF5BE96C5A8E00066E831F8B23 /* XCTest-Gherkin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3448E2DDDD488F2AD0C8EA9B87325ADE /* XCTest-Gherkin-dummy.m */; };
+		DC2A64C18B178B85F60E2C2F569FD532 /* Pods-GherkinTestsTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C401BDF55B5107EC75DFDB2038B91E /* Pods-GherkinTestsTests-dummy.m */; };
+		E1F5888509C1664349100362B4355E89 /* UnusedStepsTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 10115A404C4F5E557A5A4CFA0064194D /* UnusedStepsTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E990B74CA02808C96371BE94CA6394C1 /* StringGherkinExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C906F662288A89F89764FA05D621AE12 /* StringGherkinExtension.swift */; };
+		ED33C9A5924EC5C20987F5392B1DC167 /* Pods-GherkinTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F7D474488666777E72113C628E8D6A /* Pods-GherkinTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF6AD63B65705EFB9691E03E579C3EFA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C061463250766C9C05995AB8EE63E66 /* XCTest.framework */; };
+		F357851630A0B10491BCF908D8D47663 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83DE851DF5745B249856525DCD524CE /* Background.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E8E83185B543AF24A92551FAC53B736 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F199D15C201B9F6258649341FC74CE0C;
+			remoteInfo = "XCTest-Gherkin";
+		};
+		BF81E82876D3726A8B86022E8495D273 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F199D15C201B9F6258649341FC74CE0C;
+			remoteInfo = "XCTest-Gherkin";
+		};
+		D7F9398F43AC0EBAE2BEA15AE73ACF85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10BADEF456B77538867A65FEBC2E3F5E;
+			remoteInfo = "Pods-GherkinTests";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		033A36A29482FD32230FE0CA177F9BD3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		040C3DE4156F814B70C6C1D88B69D28E /* Pods-GherkinTests-GherkinTestsUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GherkinTests-GherkinTestsUITests-umbrella.h"; sourceTree = "<group>"; };
+		0B89C6ED8C15F9E47A1869921C99C2E1 /* XCTestCase+Gherkin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "XCTestCase+Gherkin.swift"; path = "Pod/Core/XCTestCase+Gherkin.swift"; sourceTree = "<group>"; };
+		0C17DBB1A7078B11A3D6803AFDAEA8A4 /* Pods-GherkinTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GherkinTests.modulemap"; sourceTree = "<group>"; };
+		10115A404C4F5E557A5A4CFA0064194D /* UnusedStepsTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UnusedStepsTracker.h; path = Pod/Core/UnusedStepsTracker.h; sourceTree = "<group>"; };
+		198F93283A70DE1B8E1B6A50F8E021C5 /* XCTest-Gherkin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "XCTest-Gherkin.debug.xcconfig"; sourceTree = "<group>"; };
+		23A706CEF291D2115FD0FE0AC4688686 /* Pods-GherkinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GherkinTests.release.xcconfig"; sourceTree = "<group>"; };
+		2691F7317E35722DBF80A6A07361F0CC /* Pods_GherkinTests_GherkinTestsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GherkinTests_GherkinTestsUITests.framework; path = "Pods-GherkinTests-GherkinTestsUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26F145AED595BE26E053B11143C362D6 /* Pods-GherkinTestsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GherkinTestsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2C061463250766C9C05995AB8EE63E66 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2E1EE84167F6BB60EFB01D68E1F25FF9 /* Pods-GherkinTestsTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GherkinTestsTests-umbrella.h"; sourceTree = "<group>"; };
+		3448E2DDDD488F2AD0C8EA9B87325ADE /* XCTest-Gherkin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XCTest-Gherkin-dummy.m"; sourceTree = "<group>"; };
+		3BB1218073A92F6D8493B2A392377F78 /* XCTest-Gherkin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "XCTest-Gherkin.release.xcconfig"; sourceTree = "<group>"; };
+		448B80B1C5409D9D8E26C14B2652E81C /* Pods-GherkinTests-GherkinTestsUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GherkinTests-GherkinTestsUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4FB35909EE39FE3AACB4721EBE4257A4 /* PageObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageObject.swift; path = Pod/Core/PageObject.swift; sourceTree = "<group>"; };
+		5CC39B42262C4256ADCCC33C53439A7F /* Pods-GherkinTests-GherkinTestsUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GherkinTests-GherkinTestsUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		63B0BC3E8A5396C93DF21DC1DEF09D29 /* ClassHelperMethods.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassHelperMethods.swift; path = Pod/Core/ClassHelperMethods.swift; sourceTree = "<group>"; };
+		63DA0B202756CB57C12CE699EAF6CD40 /* Pods-GherkinTestsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GherkinTestsTests.release.xcconfig"; sourceTree = "<group>"; };
+		6E5B64EDE8125EE14040F77FCE733665 /* Pods-GherkinTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GherkinTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7B6B8928F1E4FA1F4CD66913B39C18C8 /* MatchedStringRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchedStringRepresentable.swift; path = Pod/Core/MatchedStringRepresentable.swift; sourceTree = "<group>"; };
+		80E3E1A680356228B7EB64C559E21162 /* XCTest-Gherkin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCTest-Gherkin-umbrella.h"; sourceTree = "<group>"; };
+		834A46400DFE01999A2B7DA22CC3FD0D /* UnusedStepsTracker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UnusedStepsTracker.m; path = Pod/Core/UnusedStepsTracker.m; sourceTree = "<group>"; };
+		84ED93723EC78B72E762E0FEF9DE18FA /* Pods-GherkinTests-GherkinTestsUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GherkinTests-GherkinTestsUITests-dummy.m"; sourceTree = "<group>"; };
+		85C401BDF55B5107EC75DFDB2038B91E /* Pods-GherkinTestsTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GherkinTestsTests-dummy.m"; sourceTree = "<group>"; };
+		87DA57B5BBB5A13A739DEEAA1D7AF205 /* XCTest_Gherkin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XCTest_Gherkin.framework; path = "XCTest-Gherkin.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EBDFC7EA9D4F085B6D5942D2FB3C1FB /* Pods-GherkinTests-GherkinTestsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GherkinTests-GherkinTestsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		90594CF28AE06FBBD06EC489D6D67B74 /* XCTest-Gherkin-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XCTest-Gherkin-Info.plist"; sourceTree = "<group>"; };
+		9733DB81947B770A7CA8B55FE9988A6C /* Pods-GherkinTestsTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GherkinTestsTests.modulemap"; sourceTree = "<group>"; };
+		9C356AC1704AB88A4D865595B9844A2C /* StepDefiner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StepDefiner.swift; path = Pod/Core/StepDefiner.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F5CFF4B7FCAF6D76CD651E4AD496E6C /* Step.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Step.swift; path = Pod/Core/Step.swift; sourceTree = "<group>"; };
+		A1F7D474488666777E72113C628E8D6A /* Pods-GherkinTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GherkinTests-umbrella.h"; sourceTree = "<group>"; };
+		A206D0AC7E53A69DE4B458B4D4060409 /* Pods_GherkinTestsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GherkinTestsTests.framework; path = "Pods-GherkinTestsTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A29CC2F846C928EF449AA8B6C26FE796 /* Pods-GherkinTests-GherkinTestsUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GherkinTests-GherkinTestsUITests.modulemap"; sourceTree = "<group>"; };
+		A6EEA40F6B87EC226EEA185792B5B789 /* Pods-GherkinTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GherkinTests-Info.plist"; sourceTree = "<group>"; };
+		A7B40C1DF25CC8A1F3401E48C9AE7357 /* XCTest-Gherkin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "XCTest-Gherkin.modulemap"; sourceTree = "<group>"; };
+		B05C02560E12E24CD55BFEFAACF86EF4 /* Pods-GherkinTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GherkinTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B860ACACF448298A6023FB22D5F8CE8C /* Example.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Example.swift; path = Pod/Core/Example.swift; sourceTree = "<group>"; };
+		B8CC03222DE66F3A6F57766B252A0936 /* Pods_GherkinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GherkinTests.framework; path = "Pods-GherkinTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8F380BBDAB7EBE1AD0E6D7ADD6F2CE5 /* Pods-GherkinTestsTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GherkinTestsTests-Info.plist"; sourceTree = "<group>"; };
+		BBDAAB3EF10A01543D68AA060785A119 /* Pods-GherkinTestsTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GherkinTestsTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C1BBE1ECD407EE0D5C8F737B66477D3A /* Pods-GherkinTestsTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GherkinTestsTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C708394BBD8E0B071705F44600BA9101 /* Pods-GherkinTests-GherkinTestsUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GherkinTests-GherkinTestsUITests-frameworks.sh"; sourceTree = "<group>"; };
+		C906F662288A89F89764FA05D621AE12 /* StringGherkinExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringGherkinExtension.swift; path = Pod/Core/StringGherkinExtension.swift; sourceTree = "<group>"; };
+		CA77EDA8FCAD0C0074C630C02681A698 /* XCTest-Gherkin-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCTest-Gherkin-prefix.pch"; sourceTree = "<group>"; };
+		DBE1FDAAC83082316408DE63355999C3 /* Pods-GherkinTests-GherkinTestsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GherkinTests-GherkinTestsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E5B7F2D455C57E48C9886E088927EF18 /* LevenshteinDistance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LevenshteinDistance.swift; path = Pod/Core/LevenshteinDistance.swift; sourceTree = "<group>"; };
+		E7827D054DAA8CD03A68E3FD39617417 /* Pods-GherkinTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GherkinTests-frameworks.sh"; sourceTree = "<group>"; };
+		ECBEDB9509F19DD946ADE9F9DD944918 /* Pods-GherkinTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GherkinTests-dummy.m"; sourceTree = "<group>"; };
+		EEAA826C235BF3790D94B2A2F0F9BBEB /* Pods-GherkinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GherkinTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F83DE851DF5745B249856525DCD524CE /* Background.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Background.swift; path = Pod/Core/Background.swift; sourceTree = "<group>"; };
+		F883C292F6DEF86FF53D51F6F6C1B2D7 /* Pods-GherkinTests-GherkinTestsUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GherkinTests-GherkinTestsUITests-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		281A17E8193EA88015F624D749ACE425 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D86E8C067D854ED5C4B2AA784972AF3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CEE5955B48F00D0874FE74F250CC8E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637733F2FE096C5EDE1ECF0568B3CCC9 /* Foundation.framework in Frameworks */,
+				EF6AD63B65705EFB9691E03E579C3EFA /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C88090F992D4D2F3A05C6A21B8662F16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62C1F8A60A176E156BFE99F7A6D810D6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D399B0C55534DEEC4D10E4BE4BCE72FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A53FB80CD07AE5F97FBF46A61B2A0F0A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		140ABB2F1BBB46D68A16A020A4F3752E /* Pods-GherkinTests-GherkinTestsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A29CC2F846C928EF449AA8B6C26FE796 /* Pods-GherkinTests-GherkinTestsUITests.modulemap */,
+				448B80B1C5409D9D8E26C14B2652E81C /* Pods-GherkinTests-GherkinTestsUITests-acknowledgements.markdown */,
+				5CC39B42262C4256ADCCC33C53439A7F /* Pods-GherkinTests-GherkinTestsUITests-acknowledgements.plist */,
+				84ED93723EC78B72E762E0FEF9DE18FA /* Pods-GherkinTests-GherkinTestsUITests-dummy.m */,
+				C708394BBD8E0B071705F44600BA9101 /* Pods-GherkinTests-GherkinTestsUITests-frameworks.sh */,
+				F883C292F6DEF86FF53D51F6F6C1B2D7 /* Pods-GherkinTests-GherkinTestsUITests-Info.plist */,
+				040C3DE4156F814B70C6C1D88B69D28E /* Pods-GherkinTests-GherkinTestsUITests-umbrella.h */,
+				DBE1FDAAC83082316408DE63355999C3 /* Pods-GherkinTests-GherkinTestsUITests.debug.xcconfig */,
+				8EBDFC7EA9D4F085B6D5942D2FB3C1FB /* Pods-GherkinTests-GherkinTestsUITests.release.xcconfig */,
+			);
+			name = "Pods-GherkinTests-GherkinTestsUITests";
+			path = "Target Support Files/Pods-GherkinTests-GherkinTestsUITests";
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E285571EF144F8DACCF451128B351DD /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		316EB1A460706D747862B68F552AB9A7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7B40C1DF25CC8A1F3401E48C9AE7357 /* XCTest-Gherkin.modulemap */,
+				3448E2DDDD488F2AD0C8EA9B87325ADE /* XCTest-Gherkin-dummy.m */,
+				90594CF28AE06FBBD06EC489D6D67B74 /* XCTest-Gherkin-Info.plist */,
+				CA77EDA8FCAD0C0074C630C02681A698 /* XCTest-Gherkin-prefix.pch */,
+				80E3E1A680356228B7EB64C559E21162 /* XCTest-Gherkin-umbrella.h */,
+				198F93283A70DE1B8E1B6A50F8E021C5 /* XCTest-Gherkin.debug.xcconfig */,
+				3BB1218073A92F6D8493B2A392377F78 /* XCTest-Gherkin.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/XCTest-Gherkin";
+			sourceTree = "<group>";
+		};
+		3E285571EF144F8DACCF451128B351DD /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				033A36A29482FD32230FE0CA177F9BD3 /* Foundation.framework */,
+				2C061463250766C9C05995AB8EE63E66 /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4820007171B127462FB367D789FA302C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8CC03222DE66F3A6F57766B252A0936 /* Pods_GherkinTests.framework */,
+				2691F7317E35722DBF80A6A07361F0CC /* Pods_GherkinTests_GherkinTestsUITests.framework */,
+				A206D0AC7E53A69DE4B458B4D4060409 /* Pods_GherkinTestsTests.framework */,
+				87DA57B5BBB5A13A739DEEAA1D7AF205 /* XCTest_Gherkin.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4AE7989D017C8CD5627230076ED5ADB0 /* XCTest-Gherkin */ = {
+			isa = PBXGroup;
+			children = (
+				B5BD9681D03199C4CF0744D2F0C6F812 /* Core */,
+				316EB1A460706D747862B68F552AB9A7 /* Support Files */,
+			);
+			name = "XCTest-Gherkin";
+			path = "XCTest-Gherkin";
+			sourceTree = "<group>";
+		};
+		824941D858A0F6E0CBA7530D8B37CE74 /* Pods-GherkinTestsTests */ = {
+			isa = PBXGroup;
+			children = (
+				9733DB81947B770A7CA8B55FE9988A6C /* Pods-GherkinTestsTests.modulemap */,
+				BBDAAB3EF10A01543D68AA060785A119 /* Pods-GherkinTestsTests-acknowledgements.markdown */,
+				C1BBE1ECD407EE0D5C8F737B66477D3A /* Pods-GherkinTestsTests-acknowledgements.plist */,
+				85C401BDF55B5107EC75DFDB2038B91E /* Pods-GherkinTestsTests-dummy.m */,
+				B8F380BBDAB7EBE1AD0E6D7ADD6F2CE5 /* Pods-GherkinTestsTests-Info.plist */,
+				2E1EE84167F6BB60EFB01D68E1F25FF9 /* Pods-GherkinTestsTests-umbrella.h */,
+				26F145AED595BE26E053B11143C362D6 /* Pods-GherkinTestsTests.debug.xcconfig */,
+				63DA0B202756CB57C12CE699EAF6CD40 /* Pods-GherkinTestsTests.release.xcconfig */,
+			);
+			name = "Pods-GherkinTestsTests";
+			path = "Target Support Files/Pods-GherkinTestsTests";
+			sourceTree = "<group>";
+		};
+		B5BD9681D03199C4CF0744D2F0C6F812 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F83DE851DF5745B249856525DCD524CE /* Background.swift */,
+				63B0BC3E8A5396C93DF21DC1DEF09D29 /* ClassHelperMethods.swift */,
+				B860ACACF448298A6023FB22D5F8CE8C /* Example.swift */,
+				E5B7F2D455C57E48C9886E088927EF18 /* LevenshteinDistance.swift */,
+				7B6B8928F1E4FA1F4CD66913B39C18C8 /* MatchedStringRepresentable.swift */,
+				4FB35909EE39FE3AACB4721EBE4257A4 /* PageObject.swift */,
+				9F5CFF4B7FCAF6D76CD651E4AD496E6C /* Step.swift */,
+				9C356AC1704AB88A4D865595B9844A2C /* StepDefiner.swift */,
+				C906F662288A89F89764FA05D621AE12 /* StringGherkinExtension.swift */,
+				10115A404C4F5E557A5A4CFA0064194D /* UnusedStepsTracker.h */,
+				834A46400DFE01999A2B7DA22CC3FD0D /* UnusedStepsTracker.m */,
+				0B89C6ED8C15F9E47A1869921C99C2E1 /* XCTestCase+Gherkin.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		C6120AD033396380BFA1431530EC8C18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4AE7989D017C8CD5627230076ED5ADB0 /* XCTest-Gherkin */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				C6120AD033396380BFA1431530EC8C18 /* Pods */,
+				4820007171B127462FB367D789FA302C /* Products */,
+				D4A72DC9F708C1D3E0561BEBAD43A419 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D4A72DC9F708C1D3E0561BEBAD43A419 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5D52FD2489AF4ADA6119338695DB304 /* Pods-GherkinTests */,
+				140ABB2F1BBB46D68A16A020A4F3752E /* Pods-GherkinTests-GherkinTestsUITests */,
+				824941D858A0F6E0CBA7530D8B37CE74 /* Pods-GherkinTestsTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E5D52FD2489AF4ADA6119338695DB304 /* Pods-GherkinTests */ = {
+			isa = PBXGroup;
+			children = (
+				0C17DBB1A7078B11A3D6803AFDAEA8A4 /* Pods-GherkinTests.modulemap */,
+				B05C02560E12E24CD55BFEFAACF86EF4 /* Pods-GherkinTests-acknowledgements.markdown */,
+				6E5B64EDE8125EE14040F77FCE733665 /* Pods-GherkinTests-acknowledgements.plist */,
+				ECBEDB9509F19DD946ADE9F9DD944918 /* Pods-GherkinTests-dummy.m */,
+				E7827D054DAA8CD03A68E3FD39617417 /* Pods-GherkinTests-frameworks.sh */,
+				A6EEA40F6B87EC226EEA185792B5B789 /* Pods-GherkinTests-Info.plist */,
+				A1F7D474488666777E72113C628E8D6A /* Pods-GherkinTests-umbrella.h */,
+				EEAA826C235BF3790D94B2A2F0F9BBEB /* Pods-GherkinTests.debug.xcconfig */,
+				23A706CEF291D2115FD0FE0AC4688686 /* Pods-GherkinTests.release.xcconfig */,
+			);
+			name = "Pods-GherkinTests";
+			path = "Target Support Files/Pods-GherkinTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		433291441E1788A4E7AB985CD009B9FC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AADF341B3FA5A8C1B7F90B9E126384A3 /* Pods-GherkinTests-GherkinTestsUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57B853FD9CE04E0B7405881B8601F814 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1F5888509C1664349100362B4355E89 /* UnusedStepsTracker.h in Headers */,
+				C85A5998A72CCB1939071FDD6EBFBC13 /* XCTest-Gherkin-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA3DFDAE81D9AEC8B954700523BD35AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED33C9A5924EC5C20987F5392B1DC167 /* Pods-GherkinTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C97AD0E965C4F3CC1259AC00F7FB17E5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B666A95FAB2C7A68223353D02C770449 /* Pods-GherkinTestsTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		10BADEF456B77538867A65FEBC2E3F5E /* Pods-GherkinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91C9C85A790521C779EE5B496A24DEFD /* Build configuration list for PBXNativeTarget "Pods-GherkinTests" */;
+			buildPhases = (
+				BA3DFDAE81D9AEC8B954700523BD35AA /* Headers */,
+				3E7E06F27671CE8BB6F4D072360670C3 /* Sources */,
+				281A17E8193EA88015F624D749ACE425 /* Frameworks */,
+				225410CDE3AAD136ABA2C88E74AC8FAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97811529FF110E1CB6DF6C1F447E84C6 /* PBXTargetDependency */,
+			);
+			name = "Pods-GherkinTests";
+			productName = "Pods-GherkinTests";
+			productReference = B8CC03222DE66F3A6F57766B252A0936 /* Pods_GherkinTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		18BAD7A31786C47BF54DA5284C37B4C7 /* Pods-GherkinTestsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 663247C00544EB3AEE61D299B70A3B7F /* Build configuration list for PBXNativeTarget "Pods-GherkinTestsTests" */;
+			buildPhases = (
+				C97AD0E965C4F3CC1259AC00F7FB17E5 /* Headers */,
+				AB9BB1761CFA7E867A8F5348AD33167F /* Sources */,
+				C88090F992D4D2F3A05C6A21B8662F16 /* Frameworks */,
+				3AAAAFF57C943FD1F9353D25912E88A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				483BBDBF75B0E88AC9BF362D63E40766 /* PBXTargetDependency */,
+			);
+			name = "Pods-GherkinTestsTests";
+			productName = "Pods-GherkinTestsTests";
+			productReference = A206D0AC7E53A69DE4B458B4D4060409 /* Pods_GherkinTestsTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		708DF4B38840CF53C1D8C8BC42443F80 /* Pods-GherkinTests-GherkinTestsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEBBBAD78A50660CEAA0EAA43080CECB /* Build configuration list for PBXNativeTarget "Pods-GherkinTests-GherkinTestsUITests" */;
+			buildPhases = (
+				433291441E1788A4E7AB985CD009B9FC /* Headers */,
+				BB421A0C06A12E853A23B371BBF8AA43 /* Sources */,
+				D399B0C55534DEEC4D10E4BE4BCE72FF /* Frameworks */,
+				342DB3AAF1764DB05E6DB967041DC2B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F518656C2922688937371D7FD4E53A36 /* PBXTargetDependency */,
+			);
+			name = "Pods-GherkinTests-GherkinTestsUITests";
+			productName = "Pods-GherkinTests-GherkinTestsUITests";
+			productReference = 2691F7317E35722DBF80A6A07361F0CC /* Pods_GherkinTests_GherkinTestsUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F199D15C201B9F6258649341FC74CE0C /* XCTest-Gherkin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DEA6F46566AD94834ACEA41F9A14AF8 /* Build configuration list for PBXNativeTarget "XCTest-Gherkin" */;
+			buildPhases = (
+				57B853FD9CE04E0B7405881B8601F814 /* Headers */,
+				8770748CCF28C40952CA07E05793C968 /* Sources */,
+				9CEE5955B48F00D0874FE74F250CC8E0 /* Frameworks */,
+				22185B0A2555FD2632C7DBC3A2710B18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "XCTest-Gherkin";
+			productName = "XCTest-Gherkin";
+			productReference = 87DA57B5BBB5A13A739DEEAA1D7AF205 /* XCTest_Gherkin.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 4820007171B127462FB367D789FA302C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10BADEF456B77538867A65FEBC2E3F5E /* Pods-GherkinTests */,
+				708DF4B38840CF53C1D8C8BC42443F80 /* Pods-GherkinTests-GherkinTestsUITests */,
+				18BAD7A31786C47BF54DA5284C37B4C7 /* Pods-GherkinTestsTests */,
+				F199D15C201B9F6258649341FC74CE0C /* XCTest-Gherkin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22185B0A2555FD2632C7DBC3A2710B18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		225410CDE3AAD136ABA2C88E74AC8FAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		342DB3AAF1764DB05E6DB967041DC2B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AAAAFF57C943FD1F9353D25912E88A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E7E06F27671CE8BB6F4D072360670C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7C38545DBEEE063ADFF6C915EA4FF2B /* Pods-GherkinTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8770748CCF28C40952CA07E05793C968 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F357851630A0B10491BCF908D8D47663 /* Background.swift in Sources */,
+				3915F5DF36B9CD83825AD43B02718487 /* ClassHelperMethods.swift in Sources */,
+				28FE6140B7BE2AB2CB51DF415C155045 /* Example.swift in Sources */,
+				1F9FD15D3D78243A5D5D4E18935C5531 /* LevenshteinDistance.swift in Sources */,
+				04119F0C7B9541A2481F5A456E7E0F69 /* MatchedStringRepresentable.swift in Sources */,
+				01C389456EEE46D60D6669F0E21FE8F9 /* PageObject.swift in Sources */,
+				038A51D78C26F851E084B0D7C8FEDF10 /* Step.swift in Sources */,
+				2CC1AB60659639248FA7BE95D2FEAA94 /* StepDefiner.swift in Sources */,
+				E990B74CA02808C96371BE94CA6394C1 /* StringGherkinExtension.swift in Sources */,
+				ADC07F7DB0DD4AD88776FB7D92A93A89 /* UnusedStepsTracker.m in Sources */,
+				D3CEDDDF5BE96C5A8E00066E831F8B23 /* XCTest-Gherkin-dummy.m in Sources */,
+				0982A2D354FFF53A63C5AC719EA143D3 /* XCTestCase+Gherkin.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB9BB1761CFA7E867A8F5348AD33167F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC2A64C18B178B85F60E2C2F569FD532 /* Pods-GherkinTestsTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB421A0C06A12E853A23B371BBF8AA43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0FF39CBFDC8D4E226AED8F5F201F2E9 /* Pods-GherkinTests-GherkinTestsUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		483BBDBF75B0E88AC9BF362D63E40766 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GherkinTests";
+			target = 10BADEF456B77538867A65FEBC2E3F5E /* Pods-GherkinTests */;
+			targetProxy = D7F9398F43AC0EBAE2BEA15AE73ACF85 /* PBXContainerItemProxy */;
+		};
+		97811529FF110E1CB6DF6C1F447E84C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "XCTest-Gherkin";
+			target = F199D15C201B9F6258649341FC74CE0C /* XCTest-Gherkin */;
+			targetProxy = 8E8E83185B543AF24A92551FAC53B736 /* PBXContainerItemProxy */;
+		};
+		F518656C2922688937371D7FD4E53A36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "XCTest-Gherkin";
+			target = F199D15C201B9F6258649341FC74CE0C /* XCTest-Gherkin */;
+			targetProxy = BF81E82876D3726A8B86022E8495D273 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0C362D60953AB8C3CE6296B04039C734 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		19C6AE46FDE9BE1537FF76937873DFF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BB1218073A92F6D8493B2A392377F78 /* XCTest-Gherkin.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XCTest-Gherkin/XCTest-Gherkin-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XCTest-Gherkin/XCTest-Gherkin-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/XCTest-Gherkin/XCTest-Gherkin.modulemap";
+				PRODUCT_MODULE_NAME = XCTest_Gherkin;
+				PRODUCT_NAME = XCTest_Gherkin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2DEC825E944EABCEA03606910F0ECF3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 198F93283A70DE1B8E1B6A50F8E021C5 /* XCTest-Gherkin.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XCTest-Gherkin/XCTest-Gherkin-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XCTest-Gherkin/XCTest-Gherkin-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/XCTest-Gherkin/XCTest-Gherkin.modulemap";
+				PRODUCT_MODULE_NAME = XCTest_Gherkin;
+				PRODUCT_NAME = XCTest_Gherkin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		37FABDB0DEB5C8128860C81A8CC01827 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEAA826C235BF3790D94B2A2F0F9BBEB /* Pods-GherkinTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GherkinTests/Pods-GherkinTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GherkinTests/Pods-GherkinTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6E170F92DB89DBAE1865BB20CD114A8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23A706CEF291D2115FD0FE0AC4688686 /* Pods-GherkinTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GherkinTests/Pods-GherkinTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GherkinTests/Pods-GherkinTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		70316595C2F2AE9923F8DA14508E87F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		787CE949337354F37ACE8C15E0AEFED8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBE1FDAAC83082316408DE63355999C3 /* Pods-GherkinTests-GherkinTestsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GherkinTests-GherkinTestsUITests/Pods-GherkinTests-GherkinTestsUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GherkinTests-GherkinTestsUITests/Pods-GherkinTests-GherkinTestsUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8991B47E3ABA8DA767304328ACD5913A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63DA0B202756CB57C12CE699EAF6CD40 /* Pods-GherkinTestsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GherkinTestsTests/Pods-GherkinTestsTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GherkinTestsTests/Pods-GherkinTestsTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A20FD0B1AB6DB1D23C5424BC4C15DD58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26F145AED595BE26E053B11143C362D6 /* Pods-GherkinTestsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GherkinTestsTests/Pods-GherkinTestsTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GherkinTestsTests/Pods-GherkinTestsTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A6A394CD9A72007A606663516B031BE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EBDFC7EA9D4F085B6D5942D2FB3C1FB /* Pods-GherkinTests-GherkinTestsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GherkinTests-GherkinTestsUITests/Pods-GherkinTests-GherkinTestsUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GherkinTests-GherkinTestsUITests/Pods-GherkinTests-GherkinTestsUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C362D60953AB8C3CE6296B04039C734 /* Debug */,
+				70316595C2F2AE9923F8DA14508E87F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		663247C00544EB3AEE61D299B70A3B7F /* Build configuration list for PBXNativeTarget "Pods-GherkinTestsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A20FD0B1AB6DB1D23C5424BC4C15DD58 /* Debug */,
+				8991B47E3ABA8DA767304328ACD5913A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DEA6F46566AD94834ACEA41F9A14AF8 /* Build configuration list for PBXNativeTarget "XCTest-Gherkin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DEC825E944EABCEA03606910F0ECF3E /* Debug */,
+				19C6AE46FDE9BE1537FF76937873DFF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91C9C85A790521C779EE5B496A24DEFD /* Build configuration list for PBXNativeTarget "Pods-GherkinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37FABDB0DEB5C8128860C81A8CC01827 /* Debug */,
+				6E170F92DB89DBAE1865BB20CD114A8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEBBBAD78A50660CEAA0EAA43080CECB /* Build configuration list for PBXNativeTarget "Pods-GherkinTests-GherkinTestsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				787CE949337354F37ACE8C15E0AEFED8 /* Debug */,
+				A6A394CD9A72007A606663516B031BE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
