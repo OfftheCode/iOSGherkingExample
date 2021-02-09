@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,10 @@
 		8A75FB3C25D20343007582B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A75FB3A25D20343007582B3 /* LaunchScreen.storyboard */; };
 		8A75FB4725D20343007582B3 /* GherkinTestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A75FB4625D20343007582B3 /* GherkinTestsTests.swift */; };
 		8A75FB5225D20343007582B3 /* GherkinTestsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A75FB5125D20343007582B3 /* GherkinTestsUITests.swift */; };
+		8A75FB7D25D20DDE007582B3 /* FeatureFilesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A75FB7C25D20DDE007582B3 /* FeatureFilesFetcher.swift */; };
+		8A75FB8D25D211E6007582B3 /* is_it_friday_yet.feature in Resources */ = {isa = PBXBuildFile; fileRef = 8A75FB8C25D211E6007582B3 /* is_it_friday_yet.feature */; };
+		8A75FB8E25D211E6007582B3 /* is_it_friday_yet.feature in Resources */ = {isa = PBXBuildFile; fileRef = 8A75FB8C25D211E6007582B3 /* is_it_friday_yet.feature */; };
+		8A75FB8F25D211E6007582B3 /* is_it_friday_yet.feature in Resources */ = {isa = PBXBuildFile; fileRef = 8A75FB8C25D211E6007582B3 /* is_it_friday_yet.feature */; };
 		9D48638644756DE8BD2183C6 /* Pods_GherkinTestsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 431A21FB21C2F74213C3578D /* Pods_GherkinTestsTests.framework */; };
 		C30231D6F822E85BF6058778 /* Pods_GherkinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D8E67BB1EBE8F3B682CBF5 /* Pods_GherkinTests.framework */; };
 		DF06E46FB17EBEF206DEEDA4 /* Pods_GherkinTests_GherkinTestsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B520ABFCB2347473C5A4CF6 /* Pods_GherkinTests_GherkinTestsUITests.framework */; };
@@ -59,6 +63,8 @@
 		8A75FB4D25D20343007582B3 /* GherkinTestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GherkinTestsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A75FB5125D20343007582B3 /* GherkinTestsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GherkinTestsUITests.swift; sourceTree = "<group>"; };
 		8A75FB5325D20343007582B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A75FB7C25D20DDE007582B3 /* FeatureFilesFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureFilesFetcher.swift; sourceTree = "<group>"; };
+		8A75FB8C25D211E6007582B3 /* is_it_friday_yet.feature */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = is_it_friday_yet.feature; sourceTree = "<group>"; };
 		904FABFC7B6C85AD544EC278 /* Pods-GherkinTests-GherkinTestsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GherkinTests-GherkinTestsUITests.release.xcconfig"; path = "Target Support Files/Pods-GherkinTests-GherkinTestsUITests/Pods-GherkinTests-GherkinTestsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AB0081C1EBDD893411FA2197 /* Pods-GherkinTests-GherkinTestsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GherkinTests-GherkinTestsUITests.debug.xcconfig"; path = "Target Support Files/Pods-GherkinTests-GherkinTestsUITests/Pods-GherkinTests-GherkinTestsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,8 +146,10 @@
 		8A75FB4525D20343007582B3 /* GherkinTestsTests */ = {
 			isa = PBXGroup;
 			children = (
+				8A75FB8C25D211E6007582B3 /* is_it_friday_yet.feature */,
 				8A75FB4625D20343007582B3 /* GherkinTestsTests.swift */,
 				8A75FB4825D20343007582B3 /* Info.plist */,
+				8A75FB7C25D20DDE007582B3 /* FeatureFilesFetcher.swift */,
 			);
 			path = GherkinTestsTests;
 			sourceTree = "<group>";
@@ -165,7 +173,6 @@
 				6EF67201E060E8B3F0834EAD /* Pods-GherkinTestsTests.debug.xcconfig */,
 				26202AD69E586122CB3DEC2D /* Pods-GherkinTestsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -278,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A75FB3C25D20343007582B3 /* LaunchScreen.storyboard in Resources */,
+				8A75FB8D25D211E6007582B3 /* is_it_friday_yet.feature in Resources */,
 				8A75FB3925D20343007582B3 /* Assets.xcassets in Resources */,
 				8A75FB3725D20341007582B3 /* Main.storyboard in Resources */,
 			);
@@ -287,6 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A75FB8E25D211E6007582B3 /* is_it_friday_yet.feature in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A75FB8F25D211E6007582B3 /* is_it_friday_yet.feature in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +427,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A75FB7D25D20DDE007582B3 /* FeatureFilesFetcher.swift in Sources */,
 				8A75FB4725D20343007582B3 /* GherkinTestsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

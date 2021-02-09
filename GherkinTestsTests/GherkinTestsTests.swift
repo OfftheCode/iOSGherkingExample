@@ -52,17 +52,17 @@ final class FridayServiceSteps: StepDefiner {
     
     override func defineSteps() {
         
-        step("today is (.*)") { (day: String) in
-            self.today = day
-        }
-        
-        step("I ask wheter it's Friday yet") {
-            self.actualAnswer = self.isItFriday(self.today)
-        }
-        
-        step("I should be told (.*)") { (expectedAnswer: String) in
-            XCTAssertEqual(self.actualAnswer, expectedAnswer)
-        }
+//        step("today is (.*)") { (day: String) in
+//            self.today = day
+//        }
+//        
+//        step("I ask wheter it's Friday yet") {
+//            self.actualAnswer = self.isItFriday(self.today)
+//        }
+//        
+//        step("I should be told (.*)") { (expectedAnswer: String) in
+//            XCTAssertEqual(self.actualAnswer, expectedAnswer)
+//        }
     }
     
     

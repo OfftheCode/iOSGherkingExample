@@ -7,6 +7,7 @@ target 'GherkinTests' do
 
   # Pods for GherkinTests
   pod 'XCTest-Gherkin'
+  pod 'XCTest-Gherkin/Native'
 
   target 'GherkinTestsTests' do
     inherit! :search_paths
