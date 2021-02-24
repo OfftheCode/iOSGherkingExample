@@ -22,6 +22,8 @@
 		8A75FC9325E65AE9007582B3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A75FC9225E65AE9007582B3 /* User.swift */; };
 		8A75FC9C25E65B08007582B3 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A75FC9B25E65B08007582B3 /* Product.swift */; };
 		8A75FCA425E65BFE007582B3 /* ProductRecommender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A75FCA325E65BFE007582B3 /* ProductRecommender.swift */; };
+		8A75FCAC25E661F2007582B3 /* product_recommendation.feature in Resources */ = {isa = PBXBuildFile; fileRef = 8A75FCAB25E661F2007582B3 /* product_recommendation.feature */; };
+		8A75FCB225E66414007582B3 /* ProductsRecommenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A75FCB125E66414007582B3 /* ProductsRecommenderTests.swift */; };
 		9D48638644756DE8BD2183C6 /* Pods_GherkinTestsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 431A21FB21C2F74213C3578D /* Pods_GherkinTestsTests.framework */; };
 		C30231D6F822E85BF6058778 /* Pods_GherkinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D8E67BB1EBE8F3B682CBF5 /* Pods_GherkinTests.framework */; };
 		DF06E46FB17EBEF206DEEDA4 /* Pods_GherkinTests_GherkinTestsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B520ABFCB2347473C5A4CF6 /* Pods_GherkinTests_GherkinTestsUITests.framework */; };
@@ -71,6 +73,8 @@
 		8A75FC9225E65AE9007582B3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8A75FC9B25E65B08007582B3 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		8A75FCA325E65BFE007582B3 /* ProductRecommender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRecommender.swift; sourceTree = "<group>"; };
+		8A75FCAB25E661F2007582B3 /* product_recommendation.feature */ = {isa = PBXFileReference; lastKnownFileType = text; path = product_recommendation.feature; sourceTree = "<group>"; };
+		8A75FCB125E66414007582B3 /* ProductsRecommenderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRecommenderTests.swift; sourceTree = "<group>"; };
 		904FABFC7B6C85AD544EC278 /* Pods-GherkinTests-GherkinTestsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GherkinTests-GherkinTestsUITests.release.xcconfig"; path = "Target Support Files/Pods-GherkinTests-GherkinTestsUITests/Pods-GherkinTests-GherkinTestsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AB0081C1EBDD893411FA2197 /* Pods-GherkinTests-GherkinTestsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GherkinTests-GherkinTestsUITests.debug.xcconfig"; path = "Target Support Files/Pods-GherkinTests-GherkinTestsUITests/Pods-GherkinTests-GherkinTestsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +156,7 @@
 		8A75FB4525D20343007582B3 /* GherkinTestsTests */ = {
 			isa = PBXGroup;
 			children = (
+				8A75FCB025E663E9007582B3 /* Product */,
 				8A75FB8C25D211E6007582B3 /* is_it_friday_yet.feature */,
 				8A75FB4625D20343007582B3 /* GherkinTestsTests.swift */,
 				8A75FB4825D20343007582B3 /* Info.plist */,
@@ -194,6 +199,15 @@
 				8A75FC9225E65AE9007582B3 /* User.swift */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		8A75FCB025E663E9007582B3 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				8A75FCAB25E661F2007582B3 /* product_recommendation.feature */,
+				8A75FCB125E66414007582B3 /* ProductsRecommenderTests.swift */,
+			);
+			path = Product;
 			sourceTree = "<group>";
 		};
 		8FF10FA3A350DCBC8C0294A4 /* Pods */ = {
@@ -328,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A75FB8E25D211E6007582B3 /* is_it_friday_yet.feature in Resources */,
+				8A75FCAC25E661F2007582B3 /* product_recommendation.feature in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +480,7 @@
 			files = (
 				8A75FB7D25D20DDE007582B3 /* FeatureFilesFetcher.swift in Sources */,
 				8A75FB4725D20343007582B3 /* GherkinTestsTests.swift in Sources */,
+				8A75FCB225E66414007582B3 /* ProductsRecommenderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
