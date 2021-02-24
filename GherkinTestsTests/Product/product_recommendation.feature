@@ -8,6 +8,10 @@ Feature: Recommending Products
 
     Examples:
       | hobby | product_name     | recommended |
-      | Plant | Super Plant      | true        |
-      | Music | Amazing Juice    | false       |
-      | plant | Futuristic plant | true        |
+      | Plant | Super Plant      | yes         |
+      | Music | Amazing Juice    | no          |
+      | plant | Futuristic plant | yes         |
+
+  Scenario: On blackfriday all products are recommended
+    Given today is blackfriday
+    Then all products should be recommended

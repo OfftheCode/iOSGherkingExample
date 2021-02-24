@@ -41,10 +41,6 @@ final class ProductsRecommenderTestsSteps: StepDefiner {
     private var hobby: Hobby!
     private var productName: String!
     
-    private func isItFriday(_ day: String) -> String {
-        return day == "Friday" ? "Yes" : "Nope"
-    }
-    
     override func defineSteps() {
         
         step("user have (.*)") { (hobby: Hobby) in
