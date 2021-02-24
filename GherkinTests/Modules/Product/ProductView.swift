@@ -74,7 +74,6 @@ class ProductView: UIView {
         self.addProductAction = addProductAction
         super.init(frame: .zero)
         setupLayout()
-        configure()
     }
     
     required init?(coder: NSCoder) {
@@ -122,17 +121,37 @@ class ProductView: UIView {
     // MARK: Actions
     
     @objc private func handleAddProductButtonTapped() {
-        
+        addProductAction()
     }
     
-    func configure() {
-        productImage.image = UIImage(named: "plant")
-        productTitleLabel.text = "Amazing Plant"
-        productDescriptionLabel.text = "Maybe you wonder why should you buy this plant? Well me too, tho I would like you to focus on the presentation ^^. Anyways thanks for your time, hope you're having fun!"
-        addProductButton.setTitle("Buy for 14$", for: .normal)
-        recomendationIconImage.isHidden = false
+    func configure(with representable: ProductRepresentable) {
+        productImage.image = representable.image
+        productTitleLabel.text = representable.title
+        productDescriptionLabel.text = representable.description
+        addProductButton.setTitle(representable.addProductButtonTitle, for: .normal)
+        recomendationIconImage.isHidden = !representable.isRecommended
     }
     
+}
+
+struct ProductRepresentable {
+    private let price: Price
+    let image: UIImage?
+    let title: String
+    let description: String
+    let isRecommended: Bool
+    
+    var addProductButtonTitle: String {
+        "Buy for \(price)"
+    }
+    
+    init(with product: Product, and recommendationResult: ProductRecommendationResult) {
+        self.image = UIImage(named: product.productResourceName)
+        self.title = product.name
+        self.description = product.description
+        self.price = product.price
+        self.isRecommended = recommendationResult
+    }
 }
 
 extension UIView {
