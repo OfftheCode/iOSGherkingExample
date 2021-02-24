@@ -36,7 +36,7 @@ final class FridayGherkinServiceSteps: StepDefiner {
     private var actualAnswer: String!
     
     private func isItFriday(_ day: String) -> String {
-        return day.replacingOccurrences(of: "\"", with: "") == "Friday" ? "Yes" : "Nope"
+        return day == "Friday" ? "Yes" : "Nope"
     }
     
     override func defineSteps() {
@@ -51,7 +51,7 @@ final class FridayGherkinServiceSteps: StepDefiner {
         }
         
         step("I should be told (.*)") { (expectedAnswer: String) in
-            XCTAssertEqual(self.actualAnswer!, expectedAnswer.replacingOccurrences(of: "\"", with: ""))
+            XCTAssertEqual(self.actualAnswer!, expectedAnswer)
         }
         
     }
